@@ -1,24 +1,80 @@
-this is my demo 2 file.
-this is for commit files.
-this is for commit ..version 1.1
-update code for commit
+PC@DESKTOP-A76PVCE MINGW64 ~/Desktop/Gitdemo (master)
+$ git init
+Initialized empty Git repository in C:/Users/PC/Desktop/Gitdemo/.git/
+
+PC@DESKTOP-A76PVCE MINGW64 ~/Desktop/Gitdemo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Login.html
+        Signup.html
+        actionpage.css
+        demo.html
+        demo.txt
+        demo2.txt
+        gitfolder/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+PC@DESKTOP-A76PVCE MINGW64 ~/Desktop/Gitdemo (master)
+$ git add .
+
+PC@DESKTOP-A76PVCE MINGW64 ~/Desktop/Gitdemo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Login.html
+        new file:   Signup.html
+        new file:   actionpage.css
+        new file:   demo.html
+        new file:   demo.txt
+        new file:   demo2.txt
+        new file:   gitfolder/fold.txt
 
 
-this is my demo 2 file.
-this is for commit files.
-this is for commit ..version 1.1
-update code for commit
+PC@DESKTOP-A76PVCE MINGW64 ~/Desktop/Gitdemo (master)
+$ git commit -m "First Commit"
+[master (root-commit) 5bdcade] First Commit
+ 7 files changed, 247 insertions(+)
+ create mode 100644 Login.html
+ create mode 100644 Signup.html
+ create mode 100644 actionpage.css
+ create mode 100644 demo.html
+ create mode 100644 demo.txt
+ create mode 100644 demo2.txt
+ create mode 100644 gitfolder/fold.txt
 
+PC@DESKTOP-A76PVCE MINGW64 ~/Desktop/Gitdemo (master)
+$  it status
+bash: it: command not found
 
-this is my demo 2 file.
-this is for commit files.
-this is for commit ..version 1.1
-update code for commit
+PC@DESKTOP-A76PVCE MINGW64 ~/Desktop/Gitdemo (master)
+$ git add .
 
+PC@DESKTOP-A76PVCE MINGW64 ~/Desktop/Gitdemo (master)
+$ git commit -m "second commit"
+[master 111158a] second commit
+ 1 file changed, 14 insertions(+)
 
-this is my demo 2 file.
-this is for commit files.
-this is for commit ..version 1.1
-update code for commit
-
+PC@DESKTOP-A76PVCE MINGW64 ~/Desktop/Gitdemo (master)
+$
+PC@DESKTOP-A76PVCE MINGW64 ~/Desktop/Gitdemo (master)
+$ git commit -m "First Commit"
+[master (root-commit) 5bdcade] First Commit
+ 7 files changed, 247 insertions(+)
+ create mode 100644 Login.html
+ create mode 100644 Signup.html
+ create mode 100644 actionpage.css
+ create mode 100644 demo.html
+ create mode 100644 demo.txt
+ create mode 100644 demo2.txt
+ create mode 100644 gitfolder/fold.txt
 
