@@ -1,80 +1,77 @@
-PC@DESKTOP-A76PVCE MINGW64 ~/Desktop/Gitdemo (master)
-$ git init
-Initialized empty Git repository in C:/Users/PC/Desktop/Gitdemo/.git/
 
 PC@DESKTOP-A76PVCE MINGW64 ~/Desktop/Gitdemo (master)
 $ git status
 On branch master
-
-No commits yet
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        Login.html
-        Signup.html
-        actionpage.css
-        demo.html
-        demo.txt
-        demo2.txt
-        gitfolder/
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-PC@DESKTOP-A76PVCE MINGW64 ~/Desktop/Gitdemo (master)
-$ git add .
-
-PC@DESKTOP-A76PVCE MINGW64 ~/Desktop/Gitdemo (master)
-$ git status
-On branch master
-
-No commits yet
-
 Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-        new file:   Login.html
-        new file:   Signup.html
-        new file:   actionpage.css
-        new file:   demo.html
-        new file:   demo.txt
-        new file:   demo2.txt
-        new file:   gitfolder/fold.txt
+  (use "git restore --staged <file>..." to unstage)
+        modified:   demo2.txt
 
 
 PC@DESKTOP-A76PVCE MINGW64 ~/Desktop/Gitdemo (master)
-$ git commit -m "First Commit"
-[master (root-commit) 5bdcade] First Commit
- 7 files changed, 247 insertions(+)
- create mode 100644 Login.html
- create mode 100644 Signup.html
- create mode 100644 actionpage.css
- create mode 100644 demo.html
- create mode 100644 demo.txt
- create mode 100644 demo2.txt
- create mode 100644 gitfolder/fold.txt
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   demo2.txt
 
-PC@DESKTOP-A76PVCE MINGW64 ~/Desktop/Gitdemo (master)
-$  it status
-bash: it: command not found
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   demo2.txt
+
 
 PC@DESKTOP-A76PVCE MINGW64 ~/Desktop/Gitdemo (master)
 $ git add .
 
 PC@DESKTOP-A76PVCE MINGW64 ~/Desktop/Gitdemo (master)
-$ git commit -m "second commit"
-[master 111158a] second commit
- 1 file changed, 14 insertions(+)
+$ git commit -m "first commit"
+[master c67cc1a] first commit
+ 1 file changed, 72 insertions(+), 16 deletions(-)
 
 PC@DESKTOP-A76PVCE MINGW64 ~/Desktop/Gitdemo (master)
-$
-PC@DESKTOP-A76PVCE MINGW64 ~/Desktop/Gitdemo (master)
-$ git commit -m "First Commit"
-[master (root-commit) 5bdcade] First Commit
- 7 files changed, 247 insertions(+)
- create mode 100644 Login.html
- create mode 100644 Signup.html
- create mode 100644 actionpage.css
- create mode 100644 demo.html
- create mode 100644 demo.txt
- create mode 100644 demo2.txt
- create mode 100644 gitfolder/fold.txt
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   demo.txt
 
+no changes added to commit (use "git add" and/or "git commit -a")
+
+PC@DESKTOP-A76PVCE MINGW64 ~/Desktop/Gitdemo (master)
+$ git add demo.txt
+
+PC@DESKTOP-A76PVCE MINGW64 ~/Desktop/Gitdemo (master)
+$ git commit -m "SecondCommit"
+[master 2b12255] SecondCommit
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+
+PC@DESKTOP-A76PVCE MINGW64 ~/Desktop/Gitdemo (master)
+$  git commit log
+error: pathspec 'log' did not match any file(s) known to git
+
+PC@DESKTOP-A76PVCE MINGW64 ~/Desktop/Gitdemo (master)
+$ git log
+commit 2b122550062dc33e19decff75083bbc41b47035a (HEAD -> master)
+Author: mamtabandhekar <mamtabandhekar46@gmail.com>
+Date:   Tue Sep 9 14:56:57 2025 +0530
+
+    SecondCommit
+
+commit c67cc1ae380383c6ced8651f1d97f093be45c1f2
+Author: mamtabandhekar <mamtabandhekar46@gmail.com>
+Date:   Tue Sep 9 14:51:08 2025 +0530
+
+    first commit
+
+commit 111158ab69a201307f1ed6ea07c9143aeaa7858a
+Author: mamtabandhekar <mamtabandhekar46@gmail.com>
+Date:   Mon Sep 8 16:30:37 2025 +0530
+
+    second commit
+
+commit 5bdcade342604fb607adcdbe188c8fe0e9fa5ce2
+Author: mamtabandhekar <mamtabandhekar46@gmail.com>
+Date:   Mon Sep 8 16:26:45 2025 +0530
+
+    First Commit
