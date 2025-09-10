@@ -4,3 +4,6 @@ To understand it better, imagine you're at a restaurant: the waiter (API) takes 
 
 API (Application Programming Interface)
 Today, over 80% of modern web applications rely on APIs to fetch data, integrate with third-party services, or enable features like login, payments, or real-time updates. APIs play a crucial role in building flexible, scalable, and connected software systems.
+
+
+git clone : it is used to copy the folder or project from local or GitHub.
